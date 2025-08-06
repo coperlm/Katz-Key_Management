@@ -1,0 +1,30 @@
+/* 正文字体大小 */
+.slidev-layout p, 
+.slidev-layout li {
+  font-size: 20px !important;
+  line-height: 1.2 !important;
+}
+
+/* 标题字体大小 */
+/* .slidev-layout h1 {
+  font-size: 2.5rem !important;
+}
+
+.slidev-layout h2 {
+  font-size: 2rem !important;
+}
+
+.slidev-layout h3 {
+  font-size: 1.5rem !important;
+} */
+
+/* 代码块字体大小 */
+/* .slidev-code {
+  font-size: 16px !important;
+  line-height: 24px !important;
+} */
+
+/* 作者信息区域字体大小 */
+/* .pt-4.text-2xl {
+  font-size: 24px !important;
+} */
