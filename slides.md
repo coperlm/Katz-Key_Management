@@ -29,11 +29,13 @@ section: Motivation
 
 - Private-key cryptography is used to ensure secrecy and integrity for two communicating parties.
 
-- Its security is entirely dependent on the foundational assumption that both parties already possess a shared, secret key.
+- Its security is entirely dependent on the foundational assumption that both parties **already possess a shared, secret key**.
 
 - This introduces a fundamental logistical problem: How can the parties securely share this secret key in the first place? 
 
 - Sending the key over an insecure communication channel is not a solution, as an eavesdropper would simply intercept it.
+
+<img src=".\img\鸡蛋.png" alt="Logo" width="500" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 1;" />
 
 ---
 
@@ -46,6 +48,10 @@ section: Motivation
 - In a network of N employees, each individual would need to securely store and manage N-1 unique keys, creating a logistical nightmare.
 
 - These methods are completely non-viable for "open systems" like the internet, which involve transient interactions between strangers.
+
+<img src=".\img\面对面.png" alt="Logo" width="240" style="position: absolute; bottom: 30px; left: 35%; transform: translateX(-50%); z-index: 1;" />
+
+<img src=".\img\钥匙.png" alt="Logo" width="240" style="position: absolute; bottom: 30px; left: 65%; transform: translateX(-50%); z-index: 1;" />
 
 ---
 section: One solution - KDC
@@ -61,6 +67,8 @@ section: One solution - KDC
 
 - The KDC generates a new, random "session key" for that specific conversation, which is discarded afterward.
 
+<img src=".\img\KDC.png" alt="Logo" width="500" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 1;" />
+
 ---
 
 # KDC Protocol Flow and Drawbacks
@@ -72,6 +80,9 @@ section: One solution - KDC
 - Drawback 1: **Single Point of Failure**. If the KDC goes offline, no one can establish new secure sessions.
 
 - Drawback 2: **High-Value Target**. A compromise of the KDC would allow an attacker to decrypt all network traffic, breaking the entire system.
+
+<img src=".\img\Needham-Schroeder.png" alt="Logo" width="500" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 1;" />
+
 
 ---
 section: Breakthrough - DH Protocol
